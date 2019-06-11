@@ -21,7 +21,7 @@ $(document).ready(function() {
 		$.ajax({
 			url : "rest/adelium",
 			type : "post",
-			dataType : "text",
+			// Pas besoin de préciser le dataType : 1 seule méthode définie dans le service web
 			success: function(res, state){
 				
 //				Résultat de la requête envoyée au service web RestService
@@ -38,7 +38,6 @@ $(document).ready(function() {
 		$.ajax({
 			url : "rest/adelium",
 			type : "put",
-			dataType : "text",
 			success: function(res, state){
 				
 //				Résultat de la requête envoyée au service web RestService
@@ -55,7 +54,6 @@ $(document).ready(function() {
 		$.ajax({
 			url : "rest/adelium",
 			type : "delete",
-			dataType : "text",
 			success: function(res, state){
 				
 //				Résultat de la requête envoyée au service web RestService
