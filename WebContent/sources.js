@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$.ajax({
 			url : "rest/adelium",
 			type : "get",
-			dataType : "html",
+			dataType : "text", // plusieurs types définis dans RestService (text_plain, text_xml...)
 			success: function(res, state){
 				
 //				Résultat de la requête envoyée au service web RestService
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		$.ajax({
 			url : "rest/adelium",
 			type : "post",
-			dataType : "html",
+			dataType : "text",
 			success: function(res, state){
 				
 //				Résultat de la requête envoyée au service web RestService
@@ -38,7 +38,7 @@ $(document).ready(function() {
 		$.ajax({
 			url : "rest/adelium",
 			type : "put",
-			dataType : "html",
+			dataType : "text",
 			success: function(res, state){
 				
 //				Résultat de la requête envoyée au service web RestService
@@ -55,7 +55,7 @@ $(document).ready(function() {
 		$.ajax({
 			url : "rest/adelium",
 			type : "delete",
-			dataType : "html",
+			dataType : "text",
 			success: function(res, state){
 				
 //				Résultat de la requête envoyée au service web RestService
